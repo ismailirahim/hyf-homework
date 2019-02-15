@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    background: #e0e0e0;
+}
+
+/* MOBILE DEVICE */
+/* Extra small devices (phones, 600px and down) */
+.wrapper {
+    width: 100%;
+}
+/*header*/
+.flex-container-header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0 ;
+}
+.flex-container-header h1 {
+    font-family: helvetica;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.flex-container-header h1 span {
+    color: #999;
+    font-size: 0.6em;
+    font-weight: normal;
+    text-transform: lowercase;
+
+}
+/*/header*/
+
+/* main nav */
+.main-top-nav {
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    background: #fff;
+    height: 120px;
+}
+.main-top-nav ul {
+    padding: 0 0 0 10px;
+}
+.main-top-nav ul li {
+    list-style: none;
+    margin: 10px;
+}
+.main-top-nav ul li a{
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+.main-top-nav ul li a:hover{
+    color: lightgray;
+}
+/* /main nav */
+
+/* banner */
+.banner img {
+    width: 100%;
+}
+/* /banner */
+
+/* section one*/
+.firs-section_flex-container {
+    margin: 20px 10px 20px 10px;
+}
+.firs-section_flex-container h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.firs-section_flex-container aside p {
+    font-size: 0.8em;
+    color: gray;
+}
+.firs-section_flex-container h2 {
+    font-size: 1.2em;
+    margin: 10px auto;
+}
+.firs-section_flex-container article p {
+    font-size: 0.8em;
+    line-height: 22px;
+    margin: 10px auto;
+}
+/* /section one */
+
+/* section two */
+.second-section_flex-container {
+    margin: 20px 10px 20px 10px;
+}
+.second-section_flex-container h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.second-section_flex-container article p {
+    font-size: 0.8em;
+    color: gray; 
+}
+.second-section_flex-container aside h2 {
+    font-size: 1.2em;
+    margin: 30px auto;
+}
+.logo_flex-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.flex-item {
+    width: 150px;
+    padding: 5px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.flex-item img {
+    width: 80px;
+}
+/* /section two */
+
+/* footer */
+.footer_flex-container {
+    width: 100%;
+    background: purple;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    
+}
+.footer_flex-container section {
+    width: 50%;
+    margin: 20px 10px 20px 30px;
+}
+.footer_flex-container section h2 {
+   color: #fff;
+   font-size: 1.1em;;
+}
+.footer_flex-container section  {
+    color: #fff;
+    font-size: 1em;
+ }
+ .footer_flex-container section a {
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+ }
+ .footer_flex-container section:last-child {
+     display: none;
+ }
+/* /footer */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /*header*/
+    .flex-container-header {
+        width: 90%;
+        justify-content: flex-start;
+        padding-left: 30px; 
+    }
+    .flex-container-header h1 {
+        font-size: 1.7em;
+    }
+    .flex-container-header h1 span {
+        font-size: 0.8em;
+    }
+    /*/header*/
+    /*main nav*/
+    .main-top-nav {
+        height: 70px;
+    }
+    .main-top-nav ul {
+        display: flex;
+        align-items: center;
+        padding-left:20px;
+    }
+    .main-top-nav ul li a{
+        text-transform: uppercase;
+    }
+    /*/main nav*/
+        /* section one*/
+    .firs-section_flex-container {
+        margin-left: 30px;
+    }
+    .firs-section_flex-container h3 {
+        font-size: 1.3em;
+        text-decoration: underline;
+    }
+    .firs-section_flex-container aside p {
+        font-size: 0.9em;
+    }
+    .firs-section_flex-container h2 {
+        font-size: 1.4em; 
+        text-decoration: underline;
+    }
+    .firs-section_flex-container article p {
+        font-size: 1em;
+        line-height: 28px;
+    }
+    /* /section one */
+
+    /* section two */
+    .second-section_flex-container {
+        margin-left: 30px;
+    }
+    .second-section_flex-container h3 {
+        font-size: 1.3em;
+        text-decoration: underline;
+    }
+    .second-section_flex-container article p {
+        font-size: 0.9em;
+    }
+    .second-section_flex-container aside h2 {
+        font-size: 1.4em;
+        text-decoration: underline;
+    }
+    .flex-item {
+         width: 180px;
+
+    }
+    
+    /* footer */
+    .footer_flex-container {
+        flex-flow: row;  
+    }
+    .footer_flex-container section {
+        margin: 30px;
+    }
+    .footer_flex-container section h2 {
+        font-size: 1.3em;;
+    }
+    .footer_flex-container section  {
+        color: #fff;
+        font-size: 1.1em;
+    }
+    .footer_flex-container section a {
+        font-size: 1.1em;
+    }
+    /* /footer */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /*header*/
+    .flex-container-header{
+        margin-left: 170px;
+    }
+    .flex-container-header h1 {
+        font-size: 2em;
+    }
+    .flex-container-header h1 span {
+        font-size: 0.7em;
+    }
+    /*/header*/
+    /*main nav*/
+    .main-top-nav ul {
+        margin-left: 170px;
+    }
+    /*/main nav*/
+    /* section one*/
+    .firs-section_flex-container{
+        display: flex;
+        justify-content: space-between;
+    }    
+    .firs-section_flex-container h3 {
+        text-decoration: none;
+    }
+    .firs-section_flex-container aside{
+        width: 30%;
+        margin: 60px 0 0 170px;
+    }
+    .firs-section_flex-container h2 {
+        font-size: 1.5em; 
+        
+        text-decoration: none;
+    }
+    .firs-section_flex-container article  {
+        width: 45%;
+        margin: 50px 70px 0 0;
+    }
+    /* /section one */
+
+    /* section two */
+    .second-section_flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    .second-section_flex-container h3 {
+        text-decoration: none;
+    }
+    .second-section_flex-container article {
+        width: 30%;
+        margin: 60px 0 0 170px;
+    }
+    .second-section_flex-container aside h2 {
+        font-size: 1.5em; 
+        text-decoration: none;
+    }
+    .second-section_flex-container aside {
+        width: 45%;
+        margin: 30px 70px 0 0;
+    }
+    .flex-item {
+         width: 130px;
+
+    }
+    
+    /* footer */
+    
+    .footer_flex-container {
+        align-items: space-around;
+    }
+    .footer_flex-container section {
+        margin-left: 80px;
+    }
+    .footer_flex-container h2 {
+        margin-bottom: 30px;
+    }
+    .footer_flex-container ul li {
+        padding-top: 30px;
+    }
+    
+    .footer_flex-container section:last-child {
+        display: block;
+    }
+    /*/ footer*/
+}

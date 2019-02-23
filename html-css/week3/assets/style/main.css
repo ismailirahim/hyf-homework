@@ -1,0 +1,149 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main__page {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__page-header {
+    width: 100%;
+    height: 60px;
+    border-bottom:2px solid rgba(0,0,0,0.2);      
+}
+#header-logo {
+    margin-top: 5px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-logo img {
+    width: 150px;
+}
+
+.main__page-nav ul li {
+    display: inline;
+}
+.main__page-nav ul li a{
+    text-decoration: none;
+    color: #333;
+    padding: 25px;
+    letter-spacing: 1px;
+}
+.main__page-nav ul li a:hover {
+    color: lightgrey;
+}
+
+/* END of Main__page-header*/
+
+/* form Styling*/
+
+.form_content {
+    display: flex;
+    flex-flow: column wrap;
+}
+.form_descritpion {
+    width: 700px;
+}
+.wrapper label{
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+ }
+ select {
+    width: 250px;
+    height: 40px;
+}
+.form__country-label {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+input[type=text],input[type=password],input[type=numeric],input[type=email],input[type=tel] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 10px 0px 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;   
+    box-sizing: border-box;
+}
+input[type=submit] {
+    float: right;
+    width: 200px;
+    height: 60px;
+}
+.profile__description-label  {
+    font-weight: normal;
+    text-align: left;
+}
+.profile__description-label p {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 45px;
+}
+#profile-description {
+    margin: 0 10px 10px 10px;
+}
+
+#hidden {
+    display: none;
+}
+#shopping__address-checkbox-label:not(:checked) + #hidden  {
+    display: block; 
+}
+.right label {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.wrapper .right {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.img-style {
+    display: flex;  
+    flex-direction: row wrap;
+}
+.bcg {
+    margin: 10px;
+    width: 200px;
+}
+.bcg img {
+    width: 200px;
+    height: 200px;
+}
+.right {
+    float: right;
+}
+#card_month,#card_year,#card_ccv {
+    width: 7%;
+    padding: 12px 20px;
+    margin: 10px 0px 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;   
+    box-sizing: border-box;
+}
+.wrapper .card_year_label {
+    width: 100px;
+}
+#card_type {
+    margin-left: 10px;
+}
+#card_ccv {
+    width: 7%;
+}
+
+

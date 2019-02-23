@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" 
+    href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Homework Week 3</title>
+</head>
+<body>
+    <header class="main__page-header">
+        <div class="container flex-nav">
+            <div id="header-logo"><a href="index.html"><img src="assets/img/hyf_logo.png" alt="HYF logo"></a></div>
+            <nav class="main__page-nav">
+                <ul>
+                    <li><a href="index.html">First Page</a></li>
+                    <li><a href="index2.html">Second Page</a></li>
+                    <li><a href="index3.html">Third Page</a></li>
+                    <li><a href="index4.html">Fourth Page</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        <section class="container">
+            <h1>Sign up to yourcustomtailor.com</h1>
+        </section>
+        <main class="page__main container">
+            <form action="/shooping" method="GET" class="shooping__form">
+                <h2>Step 4/4- Payment</h2>
+                <p>Progress:</p>
+                <div class="w3-light-grey w3-xlarge">
+                        <div class="w3-container w3-gray" style="width:95%">95%</div>
+                </div>
+                <p>Please fill in your payment data</p>
+                <div class="form_content">
+                    <div class="wrapper">
+                        <label for="card_name">Name on card</label>
+                        <input type="text" id="card_name" name="card_name"
+                        required>
+                    </div>
+                    <div class="wrapper">
+                        <label for="card_type">Card type</label>
+                        <select name="card" id="card_type" required>
+                            <option value=""></option>
+                            <option value="dk">Dankort</option>
+                            <option value="vs">Visa</option>
+                            <option value="ms">Master Card</option>
+                        </select>
+                    </div>
+                    <div class="wrapper">
+                            <label for="card_number">Credit Card number</label>
+                            <input type="numeric" id="card_number" 
+                            name="card_number"
+                            pattern="\b(?:(?:\d[ -]*?){17,}|((?:\d[ -]*?){13,16}))\b"
+                            placeholder="···· ···· ···· ····"
+                            required>
+                            <label for="card_name-firs">First name</label>
+                            <input type="text" id="card_name-firs" name="card_name-firs"
+                            required> 
+                    </div>
+                    <div class="wrapper">
+                            <label for="card_month">Expiry Month</label>
+                            <select name="month" id="card_month" required>
+                                <option value=""select></option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                            </select>
+                            <label 
+                            class="card_year_label"
+                            for="card_year">Expiry Year</label>
+                            <select name="year" id="card_year">
+                                <option value=""></option>
+                                <option value="">2023</option>
+                                <option value="">2024</option>
+                                <option value="">2025</option>
+                                <option value="">2026</option>
+                                <option value="">2027</option>
+                                <option value="">2028</option>
+                            </select> 
+                    </div>
+                    <div class="wrapper">
+                            <label for="card_ccv">CCV</label>
+                            <input type="number" id="card_ccv" name="card_ccv"
+                            min="3"
+                            max="3"
+                            placeholder="···"
+                            required> 
+                    </div>    
+                </div>
+                <input type="submit" href="index2.html" value="Next step">                        
+            </form>
+        </main>
+</body>
+</html>
+</body>
+</html>

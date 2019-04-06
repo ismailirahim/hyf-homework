@@ -1,0 +1,74 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #D1DBB6;
+}
+header {
+    text-align: center;
+    font-family: Dokdo, cursive;
+    background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 9%, rgba(255,0,221,1) 32%, rgba(0,183,255,1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px;
+}
+.container{
+    text-align: center;
+    width: 100%;
+}
+.container input {
+    margin-bottom: 0px;
+    width: 15%;
+    padding: 12px 20px;
+    margin: 80px 0px 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;   
+    box-sizing: border-box;
+}
+.container button {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 30px 0px 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;   
+    box-sizing: border-box;
+    color: blueviolet;
+    font-size: 18px;
+}
+#wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#box_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#box_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid black;
+    border-left: 0px;
+    width: 300px;
+    height: 300px;
+}
+#win_result {
+    position: absolute;
+    top: 100px;
+    color: black;
+    width: 150px;
+    font-size: 25px;    
+    background-color: white;
+}
+p {
+    font-size: 25px;
+}

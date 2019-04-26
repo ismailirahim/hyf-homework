@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #f32170, #ffeb07, #2196f3, #ff00eb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 90px;
+}
+#search_section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#display_section {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.responsive {
+   margin: 0 auto;
+   padding: 2px;
+}
+input {
+    width: 120px;
+    height: 30px;
+    border-radius: 5%;
+}
+button {
+    border-radius: 5%;
+}

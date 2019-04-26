@@ -18,7 +18,7 @@ function displayGif (request){
 
  function searchGif (){
      let ipnutValue = input.value
-     fetch(`http://api.giphy.com/v1/gifs/search?q=${ipnutValue}&api_key=DfbsKAlSAcsGo1hJEknmTEQNM96I2q0l`)
+     fetch(`https://api.giphy.com/v1/gifs/search?q=${ipnutValue}&api_key=DfbsKAlSAcsGo1hJEknmTEQNM96I2q0l`)
     .then(response => response.json())
     .then((info) => {
         clearDisplay()

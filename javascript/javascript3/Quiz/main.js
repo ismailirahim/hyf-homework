@@ -82,11 +82,8 @@ function displayScore() {
     else if (quiz.calculateScore() < 4) {
         displayScore.innerHTML = 'Your Score  ' + quiz.calculateScore() + '/10 questions right, in ' + displaySeconds.innerHTML
     }
-    else if (quiz.calculateScore() < 6) {
+    else if (quiz.calculateScore() > 6) {
         displayScore.innerHTML = 'Your Score ' + quiz.calculateScore() + '/10 questions right, in ' + displaySeconds.innerHTML
-    }
-    else if (quiz.calculateScore() <= 7) {
-        displayScore.innerHTML = 'Your Score  ' + quiz.calculateScore() + '/10 questions right, in  ' + displaySeconds.innerHTML
         let confettiSettings = { target: 'confetti' };
         var confetti = new ConfettiGenerator(confettiSettings);
         confetti.render();

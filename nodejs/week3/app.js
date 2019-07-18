@@ -52,10 +52,17 @@ courseR
 mentorR
 	.route('/mentor')
 	.get((req, res) => {
-		let allMentors = hyf_mentors.getMentorByName('Benjamin');
+		let allMentors = hyf_mentors.getAllMentors();
 		res.status(200).send(allMentors);
 	})
-	.post((req, res) => {});
+	.post((req, res) => {
+		if (hyf_mentors.addNewMentor(req.body)) {
+			res.status(200).send(`${req.body.name} added as a new mentor`);
+		} else {
+			res.status(400).send(`${req.body.name} already exists!`);
+		}
+	})
+	.put((req, res) => {});
 app.use('/api', courseR);
 app.use('/api', mentorR);
 app.listen(port, () => {

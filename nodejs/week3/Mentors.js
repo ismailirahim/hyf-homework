@@ -9,6 +9,9 @@ class Mentor {
 		const allMentors = JSON.parse(fileData);
 		return allMentors;
 	}
+	checkMentor(mentorData, mentorName) {
+		return mentorData.some((mentors) => mentors.name.toLowerCase() === mentorName.toLowerCase());
+	}
 	getMentorsByCourse(course) {
 		let mentorsName = [];
 		this.getAllMentors().forEach((mentor) => {
@@ -22,12 +25,13 @@ class Mentor {
 	}
 	addNewMentor(mentor) {
 		let mentors = this.getAllMentors();
-		if (this.getMentorByName(mentor.name)) {
+		if (this.checkMentor(mentors, mentor.name)) {
 			return false;
 		}
 		mentors.push(mentor);
-		const addMentor = JSON.stringify(mentor, null, 4);
+		const addMentor = JSON.stringify(mentors, null, 4);
 		fs.writeFileSync(this.dataFile, addMentor);
+		return true;
 	}
 }
 

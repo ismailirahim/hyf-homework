@@ -31,5 +31,13 @@
             "JS",
             "Database"
         ]
+    },
+    {
+        "name": "himi",
+        "course": [
+            "NodeJS",
+            "React",
+            "JS"
+        ]
     }
 ]

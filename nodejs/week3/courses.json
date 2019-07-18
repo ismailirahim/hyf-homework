@@ -1,43 +1,30 @@
 [
-    {
-        "name": "NodeJS",
-        "duration": "5",
-        "mentors": [
-            "Abed",
-            "Benjamin",
-            "Radoslav"
-        ]
-    },
-    {
-        "name": "JS",
-        "duration": "9",
-        "mentors": [
-            "Abed",
-            "Benjamin",
-            "Niels",
-            "Radoslav"
-        ]
-    },
-    {
-        "name": "HTML-CSS",
-        "duration": "3",
-        "mentors": []
-    },
-    {
-        "name": "Kotlin",
-        "duration": "5",
-        "mentors": []
-    },
-    {
-        "name": "Database",
-        "duration": "5",
-        "mentors": [
-            "Niels",
-            "Radoslav"
-        ]
-    },
-    {
-        "name": "git",
-        "duration": "10"
-    }
+  {
+    "name": "React",
+    "duration": "4",
+    "mentors": []
+  },
+  {
+    "name": "NodeJS",
+    "duration": "5",
+    "mentors": []
+  },
+  {
+    "name": "HTML-CSS",
+    "duration": "3",
+    "mentors": []
+  },
+  {
+    "name": "Kotlin",
+    "duration": "5",
+    "mentors": []
+  },
+  {
+    "name": "Database",
+    "duration": "5",
+    "mentors": [
+      "Niels",
+      "Radoslav"
+    ]
+  }
 ]
